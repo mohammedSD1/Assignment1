@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="352.0" prefWidth="438.0" style="-fx-background-color: e7e7ea;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.CurrencyConverstionPageController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="-1.0" layoutY="1.0" prefHeight="118.0" prefWidth="438.0">
+         <children>
+            <Label text="Currency Converstion System">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" right="120.0" />
+               </HBox.margin>
+            </Label>
+            <Button minWidth="90.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: #ff9d01;" text="Log out" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="-1.0" layoutY="127.0" prefHeight="21.0" prefWidth="438.0">
+         <children>
+            <Label text="USD">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" right="160.0" />
+               </HBox.margin>
+            </Label>
+            <Label text="NIS">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutY="154.0" prefHeight="61.0" prefWidth="438.0">
+         <children>
+            <TextField fx:id="USD" maxWidth="120.0" minHeight="20.0" minWidth="0.0">
+               <HBox.margin>
+                  <Insets left="60.0" right="30.0" />
+               </HBox.margin>
+            </TextField>
+            <Label text="TO">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="NIS" maxWidth="120.0" minHeight="20.0" minWidth="0.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="-5.0" layoutY="215.0" prefHeight="138.0" prefWidth="445.0">
+         <children>
+            <Button maxHeight="45.0" minWidth="90.0" mnemonicParsing="false" onAction="#convert" style="-fx-background-color: #0e0b3b;" text="Convert" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
